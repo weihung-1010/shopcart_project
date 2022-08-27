@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Shop</title>
+  <script src="https://kit.fontawesome.com/20e484287c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="dist/main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a href="#" class="nav__logo"><img src="images/Logo.png"></a>
+      <input type="checkbox" class="nav__input--toggle" id="nav__input--toggle">
+     <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav-link"></a>男款</li>
+          <div class="nav__divider"></div>
+          <li class="nav__item"><a href="#" class="nav-link"></a>女款</li>
+          <div class="nav__divider"></div>
+          <li class="nav__item"><a href="#" class="nav-link"></a>最新消息</li>
+          <div class="nav__divider"></div>
+          <li class="nav__item"><a href="#" class="nav-link"></a>聯絡我們</li>
+          <div class="nav__divider"></div>
+          <li class="nav__item"><a href="#" class="nav-link"></a>客製商品</li>
+          <div class="nav__divider"></div>
+        </ul>
+        <div class="nav__icons">
+          <a href="#" class="nav__icon"><img src="images/Icon-search.png"></a>
+          <a href="#" class="nav__icon"><img src="images/Icon-cart.png"></a>
+          <a href="#" class="nav__icon"><img src="images/Icon-moon.png"></a>
+        </div>
+     </div>
+    </nav>
+    <label for="nav__input--toggle" class="nav__label">
+      <span class="hamburger"></span>
+    </label>
+   </header>
+  <div class="main-container mt-4 ml-5">
+    <div class="main__title-wrapper container">
+      <h2 class="main__title">結帳</h2>
+    </div>
+    <!-- step -->
+    <div class="stepper" id="step-control">
+      <div class="step active">
+        <div class="circle"></div>
+        <div class="text">寄送地址</div>
+      </div>
+
+      <div class="step ">
+        <div class="circle "></div>
+        <span class="line"></span>
+        <div class="text">運送方式</div>
+      </div>
+
+      <div class="step ">
+        <div class="circle "></div>
+        <span class="line"></span>
+        <div class="text">付款資訊</div>
+      </div>
+    </div>
+    <!-- form -->
+    <div class="content__container">
+    <div class="form__panel">
+      <div class="form-container">
+        <form action="" id="form" class="form">
+          <div id="step1" class="part">
+            <div class="part-title my-6">寄送地址</div>
+            <div class="form__row form__row--double ">
+              <label for="">稱謂</label>
+              <div class="select-container">
+                <select class="select-wrapper select-wrapper1 " name="user-title" id="user-title">
+                  <option value="" disabled selected>稱謂</option>
+                  <option value="">先生</option>
+                  <option value="">女士</option>
+                </select>
+              </div>
+              <label for="">姓名</label><input class="user-name " id="user-name" type="text" placeholder="請輸入姓名" />
+            </div>
+           <div class="form-layout">
+            <div class="form-wrapper info1">
+              <div class="form__row phone">
+                <label for="">電話</label><input id="user-phone" type="text" placeholder="請輸入行動電話" />
+              </div>
+              <div class="form__row  email">
+                <label for="">Email</label><input id="user-mail" type="text" placeholder="請輸入電子郵件" />
+              </div>
+            </div>
+            <div class="form-wrapper info2">
+              <div class="form__row city">
+                <label for="">縣市</label>
+                <div class="select-container">
+                  <select class="select-wrapper" name="user-location" id="user-location">
+                    <option value="" disabled selected>請選擇縣市</option>
+                    <option value="">臺北</option>
+                    <option value="">南投</option>
+                    <option value="">臺中</option>
+                    <option value="">臺南</option>
+                    <option value="">臺東</option>
+                    <option value="">嘉義</option>
+                    <option value="">雲林</option>
+                    <option value="">高雄</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__row address">
+                <label for="">地址</label>
+                <input id="user-address" type="text" placeholder="請輸入地址" />
+              </div>
+             </div>
+            </div>
+    
+          </div>
+          <!-- step2 -->
+          <div id="step2" class="part d-none">
+            <div class="part-title my-6">運送方式</div>
+            <div class="form__row">
+              <div class="form__btn--shipway shipway1 ship-active2">
+                <div class="radio-wrapper">
+                  <input name="shipway" type="radio" value="standard" class="radio1">
+                </div>
+                <div class="form__btn--shipway-description">
+                  <div class="ship-method">標準運送</div>
+                  <div class="ship-time">約3~7個工作天</div>
+                </div>
+                <div class="form__btn--shipway-fee">免費</div>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__btn--shipway shipway2 ship-active2">
+                <div class="radio-wrapper">
+                  <input name="shipway" type="radio" value="DHL" class="radio2">
+                </div>
+                <div class="form__btn--shipway-description">
+                  <div class="ship-method fw-700">DHL貨運</div>
+                  <div class="ship-time">48小時內送達</div>
+                </div>
+                <div class="form__btn--shipway-fee">$500</div>
+              </div>
+            </div>
+          </div>
+          <!-- step3 -->
+          <div id="step3" class="part d-none">
+            <div class="part-title my-6">付款資訊</div>
+            <div class="form__row">
+              <label for="">持卡人姓名</label><input id="card-name" type="text" placeholder="John Doe" />
+            </div>
+            <div class="form__row">
+              <label for="">卡號</label>
+              <input id="card-number" type="text" placeholder="1111 2222 3333 4444" />
+            </div>
+            <div class="form__row form__row--double input-time">
+              <label for="">有效期限</label>
+              <input type="month" name="" id="card-time" placeholder="MM/YY">
+              <label for="">cvc/ccv</label><input id="cvc" type="text" placeholder="123"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- shopping cart -->
+    <div class="shopping-cart__panel">
+      <div id="shopping-cart-container">
+        <h4 class="shopping-cart__panel--title">購物籃</h4>
+        <div class="shopping-cart__panel--items">
+          <div class="shopping-cart__panel--item">
+           <div class="product-wrapper">
+             <div class="img-wrapper">
+              <img src="images/product1.png" alt="" class="shopping-cart-image">
+             </div>
+            <div class="shopping-cart__panel--item-right">
+              <div class="cart-item-title">破壞補丁修身牛仔褲</div>
+              <div id="product1" class="cart-item-buttons-wrapper">
+                <div class="cart-item-button1 btn btn1"><i class="fa-solid fa-minus icon1"></i></div>
+                <div class="cart-item-number1">1</div>
+                <div class="cart-item-button2 btn btn2"><i class="fa-solid fa-plus icon2"></i></div>
+              </div>
+              <div><span><i class="fa-solid fa-dollar-sign dollar1"></i></span></div>
+              <div class="cart-item-price price1">3999</div>
+              </div>
+            </div>
+
+            <div class="product-wrapper">
+            <div class="img-wrapper">
+              <img src="images/product2.png" alt="" class="shopping-cart-image">
+            </div>
+            <div class="shopping-cart__panel--item-right">
+              <div class="cart-item-title title2">刷色直筒牛仔褲</div>
+              <div id="product2" class="cart-item-buttons-wrapper wrapper2">
+                <div class="cart-item-button1 btn btn3"><i class="fa-solid fa-minus icon3"></i></div>
+                <div class="cart-item-number2">1</div>
+                <div class="cart-item-button2 btn btn4"><i class="fa-solid fa-plus icon4"></i></div>
+              </div>
+              <div><span><i class="fa-solid fa-dollar-sign dollar2"></i></span></div>
+              <div class="cart-item-price price2">1299</div>
+            </div>
+           </div>
+          </div>
+
+          <div class="shipping-fee-line"></div>
+           <div class="shipping-fee-wrapper">
+            <div class="shipping-fee-title">運費</div>
+            <div class="freight">免費</div>
+          </div>
+
+          <div class="shipping-fee-line"></div>
+           <div class="total-fee-wrapper">
+            <div class="total-fee-title">小計</div>
+            <span class="dollar3">$</span>
+            <div class="total-fee-amount">5298</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+   </div>
+
+    <!-- button -->
+    <div class="button-line"></div>
+    <div id="btn-control" class="control__panel">
+      <button class="control__panel--back v-hidden">上一步</button>
+      <button class="control__panel--next button-style2">下一步</button>
+    </div>
+    
+  </div>
+  <script src="dist/bundle.js"></script>
+</body>
+
+</html>
+
+
+
