@@ -1,5 +1,5 @@
 # 購物車網站
-![image](https://github.com/weihung-1010/shopcar_project/blob/main/images/shop.png)
+![image](https://github.com/weihung-1010/shopcart_project/blob/main/images/shop.png)
 ## 功能＆簡介
 * 使用者可以透過按鈕切換表單分頁
 * 透過按鈕上一步＆下一步掌控目前進度
@@ -11,5 +11,5 @@
 ## 使用
 在指定資料夾位置，將專案 clone 到本地
 ```
-https://github.com/weihung-1010/shopcar_project.git
+https://github.com/weihung-1010/shopcart_project.git
 ```
