@@ -1133,7 +1133,7 @@ header .hamburger::before {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 576px) {
   /* header */
   header {
     height: 60px;
